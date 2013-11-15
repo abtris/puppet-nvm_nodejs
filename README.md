@@ -10,6 +10,7 @@ Tested to work on 64-bit:
 ## Parameters
   * `user`    : target user to install node into
   * `version` : must be the full version (format: x.x.x)
+  * `home`    : home directory of user
 
 ## Usage
 
@@ -18,6 +19,7 @@ Basic:
     class { 'nvm_nodejs':
       user    => 'prod',
       version => '0.8.22',
+      home => '/srv/prod'
     }
 
 ## Paths and executables
